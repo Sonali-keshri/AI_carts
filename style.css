@@ -27,11 +27,12 @@ li {
     align-items: center;
 }
 
-.main_container{
+.main_container {
     width: 100vw;
 }
 
 /* Navbar Styling */
+
 
 .navbar {
     padding: 10px 20px;
@@ -42,7 +43,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .leftNav {
@@ -53,7 +53,6 @@ li {
 
 .leftNav>.logo {
     width: 160px;
-
 }
 
 .rightNav {
@@ -65,15 +64,12 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 140px;
-
+    gap: 40px;
 }
 
 .menuContainer button {
     margin: 0;
 }
-
-
 
 .menuList {
     display: flex;
@@ -93,25 +89,27 @@ li {
 .filledBtn {
     border: 2px solid #CFA935;
     background-color: #CFA935;
-    padding: 18px 24px;
+    padding: 12px 20px;
     cursor: pointer;
     margin-right: 10px;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 
-.filledBtn:hover{
+.filledBtn:hover {
     opacity: 0.9;
 }
+
 
 .outlineBtn {
     border: 2px solid #CFA935;
     background-color: transparent;
-    padding: 18px 24px;
+    padding: 12px 20px;
     cursor: pointer;
-    transition: all .5s ease;
+    margin-right: 10px;
+    transition: all 0.5s ease;
 }
 
-.outlineBtn:hover{
+.outlineBtn:hover {
     background-color: #CFA935;
 }
 
@@ -125,6 +123,7 @@ li {
     font-size: 1.5em;
     color: white;
 }
+
 
 .wrapper {
     margin-inline: auto;
@@ -147,6 +146,7 @@ li {
     display: flex;
     gap: 100px;
 }
+
 
 .content h1 {
     font-size: 65px;
@@ -302,8 +302,8 @@ li {
     cursor: pointer;
 }
 
-.exam_details_page .exam-content .card:hover{
-background-color: #CFA935;
+.exam_details_page .exam-content .card:hover {
+    background-color: #CFA935;
 }
 
 /* Certification Accordion Styling */
@@ -423,12 +423,13 @@ background-color: #CFA935;
     transition: all .5s ease;
 }
 
-.course_cards .card:hover{
-    background-color:#CFA935;
+.course_cards .card:hover {
+    background-color: #CFA935;
 
 }
-.course_cards .card:hover  img{
-   
+
+.course_cards .card:hover img {
+
     background-color: #ffffff;
 }
 
@@ -461,8 +462,8 @@ background-color: #CFA935;
 
 .email_box {
     border-bottom: 2px solid #2A2E36;
-    width: 400px;
     padding-bottom: 10px;
+    width: 400px;
 }
 
 .email_box,
@@ -475,7 +476,7 @@ input[type="email"] {
     background-color: transparent;
     padding: 5px;
     font-size: 1.1rem;
-    width: 400px;
+    width: 200px;
     outline: none;
     border: none;
 }
@@ -527,6 +528,15 @@ input[type="email"] {
 }
 
 @media only screen and (max-width: 1060px) {
+    .menuContainer {
+        gap: 10px;
+    }
+
+    .menuList .menuItem {
+        font-size: 14px;
+    }
+
+
     .front_page_inside {
         align-items: center;
         gap: 50px;
@@ -566,8 +576,10 @@ input[type="email"] {
 
 
 @media only screen and (max-width: 768px) {
+
     .menu-icon {
         display: block;
+        font-size: 1.5em;
     }
 
     .menuContainer {
@@ -575,11 +587,12 @@ input[type="email"] {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 100px;
+        top: 80px;
         right: 0;
         background-color: black;
         align-items: center;
         padding: 20px 0;
+        z-index: 1000;
     }
 
     .menuContainer.active {
@@ -588,10 +601,11 @@ input[type="email"] {
 
     .menuList {
         flex-direction: column;
+        gap: 10px;
     }
 
     .menuItem {
-        font-size: 24px;
+        font-size: 18px;
         margin: 10px 0;
     }
 
@@ -599,9 +613,10 @@ input[type="email"] {
         padding: 10px;
     }
 
-    .navBtn {
-        margin-top: 10px;
+    .filledBtn {
+        padding: 10px 20px;
     }
+
 
     .wrapper {
         width: 100%;
@@ -617,7 +632,7 @@ input[type="email"] {
 
     .front_page_inside .content {
         width: 100%;
-        padding: 20px ;
+        padding: 20px;
     }
 
     .sqaure_img {
@@ -630,6 +645,17 @@ input[type="email"] {
 
     .slider-wrapper .slide-button {
         display: none;
+    }
+
+    .second_page_inside {
+        padding: 0;
+        margin: 0;
+    }
+
+    .tabList,
+    .prerequisites,
+    .prerequisites-point {
+        padding: 20px;
     }
 
     .slider-wrapper .image-list .image-item {
@@ -678,9 +704,17 @@ input[type="email"] {
         height: 200px;
     }
 
-    .tabList{
+    .front_page_btns {
+        margin-top: 5px;
+    }
+    .front_page_inside .content .front_page_btns button {
+        width: 250px;
+    }
+
+    .tabList {
         flex-wrap: wrap;
     }
+
     .exam_details_page .exam-content {
         display: flex;
         flex-direction: column;
@@ -689,7 +723,7 @@ input[type="email"] {
 
     .exam_details_page .exam-content .video {
         width: 100%;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 
     .exam_details_page .exam-content .video img {
@@ -703,16 +737,33 @@ input[type="email"] {
         grid-template-columns: 1fr;
         gap: 15px;
     }
-    .learn_cards{
+
+    .learn_cards {
         display: block;
     }
-    .course_cards{
+
+    .course_cards {
         display: block;
     }
-    .footer_links{
-        display: block;
-        
+    .course_cards .card{
+        margin: auto;
+        margin-top: 30px;
+
     }
+
+    .email_box {
+        width: 250px;
+    }
+
+    input[type="email"] {
+        font-size: 1rem;
+    }
+
+    .footer_links {
+        display: block;
+
+    }
+
 
     .footer_links p {
         margin-block: 20px;

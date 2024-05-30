@@ -1,21 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuIcon = document.getElementById('menu-icon');
-    const menuContainer = document.getElementById('menu-container');
-    const navLinks = document.querySelectorAll('.nav-link');
+    // const menuIcon = document.getElementById('menu-icon');
+    // const menuContainer = document.getElementById('menu-container');
+    // const navLinks = document.querySelectorAll('.nav-link');
 
-    // Toggle mobile menu
-    menuIcon.addEventListener('click', () => {
+    // // Toggle mobile menu
+    // menuIcon.addEventListener('click', () => {
+    //     menuContainer.classList.toggle('active');
+    // });
+
+    // // Set active link based on current URL
+    // const currentPath = window.location.pathname.split('/').pop();
+    // navLinks.forEach(link => {
+    //     if (link.getAttribute('href') === currentPath) {
+    //         link.classList.add('active');
+    //     } else {
+    //         link.classList.remove('active');
+    //     }
+    // });
+
+
+    const menuIcon = document.querySelector('.menu-icon');
+    const menuContainer = document.querySelector('.menuContainer');
+
+    menuIcon.addEventListener('click', function () {
         menuContainer.classList.toggle('active');
-    });
-
-    // Set active link based on current URL
-    const currentPath = window.location.pathname.split('/').pop();
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
     });
 
     // Initialize slider
