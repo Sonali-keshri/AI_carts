@@ -27,6 +27,9 @@ li {
     align-items: center;
 }
 
+.main_container{
+    width: 100vw;
+}
 
 /* Navbar Styling */
 
