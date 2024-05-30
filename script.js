@@ -149,17 +149,5 @@ document.addEventListener('DOMContentLoaded', () => {
             clickable: true,
         },
     });
-
-
-    var swiperNew = new Swiper(".mySwiperNew", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-paginationNew",
-          clickable: true,
-        },
-      });
-
-
  
 });
